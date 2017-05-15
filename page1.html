@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Awesome First Web Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function msgBox (mystring)
+		{
+		 alert (mystring)
+		}
+		function DoProduct(mystring1, mystring2)
+		{
+		var answer = mystring1 * mystring2
+		alert (answer)
+		}
+		function GetCrazy(colorchoice) {
+			document.body.style.backgroundcolor = colorchoice
+		}
+	</script>
+</head>
+<body>
+	<p>Simple Math:</p>
+	<form name="form2">
+	<input type="text" name="num1" size="5" /> mutliply by:
+	<input type="text" name="num2" size="5" />
+	<input type="button" name="submit2" value="Mutliply" onClick="DoProduct(form.num1.value, form.num2.value)" />
+	</form>
+
+	<form>
+	<h1>Your Name</h1>
+		<input type="text" name="box1"/>
+		<input type="button" name="submit" value="Show Me" onclick="msgBox(form.boxl.value)" />
+	</form>
+</body>
